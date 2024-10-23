@@ -15,13 +15,13 @@
 
 <body>
     <!-- Main Header -->
-    @include("partials.header")
+    @include("partials.main-header")
     <!-- Main -->
     <main>
         @yield("main")
     </main>
     <!-- Main Footer -->
-    @include("partials.footer")
+    @include("partials.main-footer")
 </body>
 
 </html>

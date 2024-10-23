@@ -1,1 +1,11 @@
 @use "~bootstrap/scss/bootstrap" as *;
+
+.card {
+    height: 375px;
+
+    img {
+        height: 275px;
+        object-fit: cover;
+        object-position: 0 top;
+    }
+}
