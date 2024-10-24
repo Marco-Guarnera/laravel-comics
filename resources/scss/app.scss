@@ -1,13 +1,19 @@
 @use "~bootstrap/scss/bootstrap" as *;
 
-// Main Header
+/* Generics */
+
+a {
+    text-decoration: none;
+}
+
+/* Main Header */
 #main-header img {
     height: 50px;
 }
 
-// Main
+/* Main */
 .card {
-    height: 375px;
+    min-height: 375px;
 
     img {
         height: 275px;

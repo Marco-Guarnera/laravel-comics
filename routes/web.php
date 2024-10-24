@@ -13,8 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Homepage
 Route::get('/', function () {
     // Struttura dati
     $comics_list = config('db');
     return view('pages.home-page', compact('comics_list'));
 })->name('homepage');
+
+// Product
+Route::get('/{index}', function (string $index) {
+    // Struttura dati
+    $comics_list = config('db');
+    if (isset($comics_list[$index])) {
+        $product = $comics_list[$index];
+        return view('pages.product', compact('product'));
+    } else {
+        abort(404);
+    }
+})->name('product');
