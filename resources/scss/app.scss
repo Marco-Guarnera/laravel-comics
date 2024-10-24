@@ -1,5 +1,11 @@
 @use "~bootstrap/scss/bootstrap" as *;
 
+// Main Header
+#main-header img {
+    height: 50px;
+}
+
+// Main
 .card {
     height: 375px;
 
